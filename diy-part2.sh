@@ -18,3 +18,7 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+# 修改后台显示的型号名称
+sed -i 's/GoWan AX3000/YourBrand-Global-Router/g' package/base-files/files/bin/config_generate
+# 修改默认 WiFi 名称
+sed -i 's/OpenWrt/GoWan_WiFi_6/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
